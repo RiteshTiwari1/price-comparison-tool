@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: price-comparison-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: SERPAPI_API_KEY
+        sync: false
+    plan: free
+
+  - type: web
+    name: price-comparison-frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          name: price-comparison-backend
+          type: web
+          property: url 
