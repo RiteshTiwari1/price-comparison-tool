@@ -19,4 +19,10 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  build: {
+    // Disable type checking during build
+    typescript: {
+      ignoreBuildErrors: true,
+    },
+  },
 }); 

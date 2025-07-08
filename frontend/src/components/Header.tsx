@@ -4,14 +4,12 @@ import {
   Toolbar,
   Typography,
   Box,
-  useMediaQuery,
   useTheme,
 } from '@mui/material';
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 
 const Header = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <AppBar position="static">

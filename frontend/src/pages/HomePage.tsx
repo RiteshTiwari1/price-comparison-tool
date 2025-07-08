@@ -13,8 +13,8 @@ import {
   CardMedia,
   Rating,
   Chip,
+  Grid,
 } from '@mui/material';
-import Grid from '@mui/material/Grid';
 import SearchIcon from '@mui/icons-material/Search';
 import { searchProducts } from '../services/api';
 import { Product } from '../types';
@@ -153,7 +153,7 @@ const HomePage = () => {
           <Divider sx={{ mb: 3 }} />
           <Grid container spacing={3}>
             {products.map((product, index) => (
-              <Grid size={{ xs: 12, sm: 6, md: 4 }} key={`${product.link}-${index}`}>
+              <Grid item xs={12} sm={6} md={4} key={`${product.link}-${index}`}>
                 <Card
                   sx={{
                     height: '100%',

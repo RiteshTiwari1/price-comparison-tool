@@ -14,7 +14,6 @@ import {
   CardMedia,
   Rating,
   Chip,
-  Link,
   Grid,
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
