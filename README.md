@@ -44,7 +44,7 @@ A tool that can fetch prices of products from multiple websites based on the cou
    ```
 
 4. Access the application:
-   - Frontend: http://localhost:80
+   - Frontend: http://localhost:5173
    - Backend API: http://localhost:3000
 
 ### Running Locally (Development)
