@@ -21,4 +21,4 @@ services:
     staticPublishPath: ./frontend/dist
     envVars:
       - key: VITE_API_URL
-        value: https://price-comparison-backend.onrender.com 
+        value: https://price-comparison-backend-b2ze.onrender.com 
